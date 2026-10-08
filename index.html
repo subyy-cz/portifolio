@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Cauã de Souza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="fundo-mar" id="fundo-mar"></div>
+<div class="fundo-dia">
+    <div class="sol-fundo"></div>
+    <div class="nuvem" style="top: 14%; animation-duration: 60s;"></div>
+    <div class="nuvem" style="top: 32%; animation-duration: 85s; animation-delay: -30s;"></div>
+    <div class="nuvem" style="top: 52%; animation-duration: 70s; animation-delay: -50s;"></div>
+</div>
+<svg class="onda" viewBox="0 0 2400 80" preserveAspectRatio="none"><path d="M0 40 q150 -40 300 0 t300 0 t300 0 t300 0 t300 0 t300 0 t300 0 t300 0 V80 H0Z"/></svg>
+<svg class="onda onda2" viewBox="0 0 2400 80" preserveAspectRatio="none"><path d="M0 40 q150 -40 300 0 t300 0 t300 0 t300 0 t300 0 t300 0 t300 0 t300 0 V80 H0Z"/></svg>
+
+<div class="transicao-tema" id="transicao-tema"></div>
+<div class="transicao-pagina" id="transicao-pagina"></div>
+<div class="progresso" id="progresso"></div>
+
+<header class="barra-superior">
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <div class="lado-direito">
+        <a href="seu-curriculo.pdf" download class="botao-curriculo">
+            <span class="icone-circulo">📥</span>
+            <span>Meu Currículo</span>
+        </a>
+        <button id="botao-tema" class="botao-tema" aria-label="Alternar Tema">☀️</button>
+    </div>
+</header>
+
+<section class="hero" id="inicio">
+    <main class="conteudoprincipal">
+        <h1 class="nomeprincipal">Cauã de <br> Souza</h1>
+        <div class="foto-perfil">
+            <img src="a.jpeg" alt="Foto de perfil">
+        </div>
+    </main>
+
+    <div class="container-scrool">
+        <span class="texto-clique"></span>
+        <a href="#sobre" class="botao-scrool" title="Scroll">↓</a>
+    </div>
+</section>
+
+<section id="sobre" class="secao">
+    <h2 class="titulo-sobre">// SOBRE MIM</h2>
+    <div class="card-sobre revelar">
+        <p>
+            Olá, eu sou o <strong>Cauã de Souza</strong>, tenho 16 anos, sou estudante do colégio Cotemig Floresta e apaixonado por tecnologia
+            e programação, com foco no desenvolvimento de interfaces modernas, limpas e que agradem ao máximo os usuários.
+        </p>
+        <div class="sobre-detalhes">
+            <div class="detalhe-item"><span class="detalhe-titulo">Foco</span><span class="detalhe-valor">Front-end</span></div>
+            <div class="detalhe-item"><span class="detalhe-titulo">Instituição</span><span class="detalhe-valor">Cotemig Floresta</span></div>
+            <div class="detalhe-item"><span class="detalhe-titulo">Localidade</span><span class="detalhe-valor">Belo Horizonte, MG</span></div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="secao">
+    <h2 class="titulo-sobre">// MINHAS SKILLS</h2>
+    <div class="grid-cards">
+        <div class="card-skill revelar">
+            <h3>HTML</h3>
+            <p>Estruturação semântica e acessibilidade web.</p>
+            <div class="barra"><span style="--nivel: 60%"></span></div>
+        </div>
+        <div class="card-skill revelar">
+            <h3>CSS</h3>
+            <p>Estilização moderna, Flexbox, CSS Grid e animações.</p>
+            <div class="barra"><span style="--nivel: 50%"></span></div>
+        </div>
+        <div class="card-skill revelar">
+            <h3>JavaScript</h3>
+            <p>Manipulação de DOM, eventos e lógica de interação.</p>
+            <div class="barra"><span style="--nivel: 20%"></span></div>
+        </div>
+        <div class="card-skill revelar">
+            <h3>Git & GitHub</h3>
+            <p>Controle de versão e hospedagem de projetos.</p>
+            <div class="barra"><span style="--nivel: 80%"></span></div>
+        </div>
+        <div class="card-skill revelar">
+            <h3>Design Responsivo</h3>
+            <p>Layouts que se adaptam a celular, tablet e computador.</p>
+            <div class="barra"><span style="--nivel: 50%"></span></div>
+        </div>
+        <div class="card-skill card-certificado revelar">
+            <h3>🏅 HTML Essentials And CSS essentials</h3>
+            <p>Certificado Cisco Networking Academy / JS Institute, oferecido pelo COTEMIG. Concluído em 31/08/2026.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projetos" class="secao">
+    <h2 class="titulo-sobre">// PROJETOS</h2>
+    <div class="filtros">
+        <button class="filtro ativo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="html-css">HTML/CSS</button>
+        <button class="filtro" data-filtro="javascript">JavaScript</button>
+    </div>
+    <div class="grid-cards">
+        <article class="card-projeto revelar" data-categoria="html-css">
+            <h3>Portfólio Pessoal</h3>
+            <p>Este site! é meu Portfólio pessoal, fiz em tema de mar e praia!</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+            <div class="links-projeto"><a href="#">Ver código</a><a href="#">Ver online</a></div>
+        </article>
+        <article class="card-projeto revelar" data-categoria="javascript">
+            <h3>Projeto 2</h3>
+            <p>Não tem ainda, só pra ter uma ideia.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">JS</span></div>
+            <div class="links-projeto"><a href="#">Ver código</a><a href="#">Ver online</a></div>
+        </article>
+        <article class="card-projeto revelar" data-categoria="html-css">
+            <h3>Projeto 3</h3>
+            <p>Não tem ainda, só pra ter uma ideia.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+            <div class="links-projeto"><a href="#">Ver código</a><a href="#">Ver online</a></div>
+        </article>
+    </div>
+</section>
+
+<section id="contatos" class="secao">
+    <h2 class="titulo-sobre">// CONTATOS</h2>
+    <div class="grid-cards">
+        <a class="card-contato revelar" href="mailto:cauasouzaroza@gmail.com"><div class="contato-topo"><span>✉️</span><h3>E-mail</h3></div><p>cauasouzaroza@gmail.com</p></a>
+        <a class="card-contato revelar" href="https://github.com/subyy-cz" target="_blank" rel="noopener"><div class="contato-topo"><svg class="contato-icone icone-github" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><h3>GitHub</h3></div><p>github.com/subyy-cz</p></a>
+        <a class="card-contato revelar" href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener"><div class="contato-topo"><svg class="contato-icone icone-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><h3>LinkedIn</h3></div><p>linkedin.com/in/aindanaotenho</p></a>
+        <a class="card-contato revelar" href="https://instagram.com/caua.sntss" target="_blank" rel="noopener"><div class="contato-topo"><span>📸</span><h3>Instagram</h3></div><p>@caua.sntss</p></a>
+    </div>
+
+    <form id="form-contato" class="card-formulario revelar" novalidate>
+        <h3>Mande uma mensagem</h3>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Seu nome">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="voce@exemplo.com">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+        <button type="submit" class="botao-enviar">Enviar</button>
+        <p class="form-msg" id="form-msg"></p>
+    </form>
+</section>
+
+<footer class="rodape">© 2026 Cauã de Souza</footer>
+
+<script src="ondanome.js"></script>
+</body>
+</html>

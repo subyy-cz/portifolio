@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | Cauã de Souza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projetos.css">
+</head>
+<body>
+
+    <header class="barra-superior">
+        <nav>
+            <ul>
+                <li><a href="index.html#sobre">Sobre Mim</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+            </ul>
+        </nav>
+
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <a href="seu-curriculo.pdf" download class="botao-curriculo">
+                <span class="icone-circulo">📥</span>
+                <span>Meu Currículo</span>
+            </a>
+            <div class="modoclaroescuro">
+                <button id="botao-tema" class="botao-tema" aria-label="Alternar Tema">☀️</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="secao-projetos">
+        <h2 class="titulo-sobre">// PROJETOS</h2>
+
+        <div class="filtros">
+            <button class="filtro ativo" data-filtro="todos">Todos</button>
+            <button class="filtro" data-filtro="html-css">HTML/CSS</button>
+            <button class="filtro" data-filtro="javascript">JavaScript</button>
+        </div>
+
+        <div class="grid-projetos">
+            <article class="card-projeto" data-categoria="html-css">
+                <h3>Portfólio Pessoal</h3>
+                <p>Este site! Layout responsivo com CSS Grid, modo claro/escuro e animações.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JS</span>
+                </div>
+                <div class="links-projeto">
+                    <a href="#">Ver código</a>
+                    <a href="#">Ver online</a>
+                </div>
+            </article>
+
+            <article class="card-projeto" data-categoria="javascript">
+                <h3>Projeto 2</h3>
+                <p>Não tem ainda, só pra ter uma ideia.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">JS</span>
+                </div>
+                <div class="links-projeto">
+                    <a href="#">Ver código</a>
+                    <a href="#">Ver online</a>
+                </div>
+            </article>
+
+            <article class="card-projeto" data-categoria="html-css">
+                <h3>Projeto 3</h3>
+                <p>Não tem ainda, só pra ter uma ideia.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+                <div class="links-projeto">
+                    <a href="#">Ver código</a>
+                    <a href="#">Ver online</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script src="ondanome.js"></script>
+    <script src="projetos.js"></script>
+</body>
+</html>

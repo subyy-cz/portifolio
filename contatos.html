@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos | Cauã de Souza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contatos.css">
+</head>
+<body>
+
+    <header class="barra-superior">
+        <nav>
+            <ul>
+                <li><a href="index.html#sobre">Sobre Mim</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+            </ul>
+        </nav>
+
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <a href="seu-curriculo.pdf" download class="botao-curriculo">
+                <span class="icone-circulo">📥</span>
+                <span>Meu Currículo</span>
+            </a>
+            <div class="modoclaroescuro">
+                <button id="botao-tema" class="botao-tema" aria-label="Alternar Tema">☀️</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="secao-contatos">
+        <h2 class="titulo-sobre">// CONTATOS</h2>
+
+        <div class="grid-contatos">
+            <a class="card-contato" href="mailto:seuemail@exemplo.com">
+                <span class="contato-icone">✉️</span>
+                <h3>E-mail</h3>
+                <p>seuemail@exemplo.com</p>
+            </a>
+            <a class="card-contato" href="https://github.com/seu-usuario" target="_blank" rel="noopener">
+                <span class="contato-icone">💻</span>
+                <h3>GitHub</h3>
+                <p>github.com/seu-usuario</p>
+            </a>
+            <a class="card-contato" href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener">
+                <span class="contato-icone">🔗</span>
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/seu-usuario</p>
+            </a>
+            <a class="card-contato" href="https://instagram.com/seu-usuario" target="_blank" rel="noopener">
+                <span class="contato-icone">📸</span>
+                <h3>Instagram</h3>
+                <p>@seu-usuario</p>
+            </a>
+        </div>
+
+        <div class="card-formulario">
+            <h3>Mande uma mensagem</h3>
+            <form id="form-contato" novalidate>
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    <span class="erro" id="erro-nome"></span>
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="voce@exemplo.com">
+                    <span class="erro" id="erro-email"></span>
+                </div>
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+                    <span class="erro" id="erro-mensagem"></span>
+                </div>
+                <button type="submit" class="botao-enviar">Enviar</button>
+                <p class="mensagem-sucesso" id="mensagem-sucesso"></p>
+            </form>
+        </div>
+    </main>
+
+    <script src="ondanome.js"></script>
+    <script src="contatos.js"></script>
+</body>
+</html>
